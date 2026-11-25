@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Theme: Warm und Editorial
+   Rosa Rahmen, cremefarbene Fläche, rote Serifenschrift
+   ========================================================================== */
+
+body { background: var(--color-frame); padding: clamp(0px, 2.5vw, 28px); }
+
+.page {
+  max-width: 1320px;
+  margin-inline: auto;
+  background: var(--color-bg);
+  border-radius: clamp(0px, 2.5vw, 28px);
+  overflow: clip;
+}
+
+.site-header { border-bottom-color: transparent; }
+
+/* Hero: zwei Panels */
+.hero__text {
+  padding: clamp(32px, 5vw, 56px);
+  border-radius: var(--radius-lg);
+  background: var(--color-tint-1);
+  min-height: 420px;
+}
+.hero__text .h1 { color: var(--color-heading); line-height: 0.98; }
+.hero__text .lead { color: var(--color-text); }
+.hero__text .eyebrow { color: var(--color-accent-dark); }
+.hero__visual { min-height: 420px; }
+
+/* Überschriften mit Stern */
+.section__head .h2 { display: flex; align-items: center; gap: 14px; }
+.section__head .star { width: 22px; height: 22px; }
+
+/* Karten als horizontale Leiste mit Pfeilen */
+.cards {
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(250px, 1fr);
+  grid-template-columns: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 16px;
+  scrollbar-color: var(--color-accent) var(--color-border);
+}
+.cards > li { scroll-snap-align: start; }
+.card__body { padding-right: 64px; }
+
+.section--alt { background: transparent; }
+
+/* Promo als Panel */
+.promo { background: transparent; }
+.promo__inner { background: var(--color-promo-bg); border-radius: var(--radius-lg); padding: clamp(28px, 5vw, 56px); }
+
+.newsletter__inner { border: 1px solid var(--color-border); }
+
+.page-hero { margin: 20px var(--gutter) 0; border-radius: var(--radius-lg); }
+.page-hero .h1 { color: var(--color-heading); }
+
+.site-footer { border-top-color: var(--color-border); }

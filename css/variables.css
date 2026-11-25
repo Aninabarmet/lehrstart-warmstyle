@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Design-Tokens: Warm und Editorial
+   ========================================================================== */
+:root {
+  /* Schriften */
+  --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-label: var(--font-body);
+  --weight-display: 400;
+  --logo-font: var(--font-body);
+  --logo-tracking: 0.14em;
+  --logo-transform: uppercase;
+
+  /* Farben */
+  --color-frame: #F7C9CF;
+  --color-bg: #FCF4EC;
+  --color-surface-alt: #FCF4EC;
+  --color-text: #2A1714;
+  --color-heading: #C8201A;
+  --color-muted: #6B4A44;
+  --color-accent: #C8201A;
+  --color-accent-dark: #9E1914;
+  --color-accent-text: #B81D17;
+  --color-outline: #B81D17;
+  --color-link: #B81D17;
+  --color-link-hover: #7E1410;
+  --color-focus: #1F3A8A;
+  --color-border: #EBD2CB;
+  --color-header-bg: #FCF4EC;
+
+  --color-tint-1: #F9D2D7;
+  --color-tint-2: #BFD7EE;
+  --color-tint-2-ink: #1F3A8A;
+  --color-tint-3: #F6DCCB;
+
+  --color-visual-bg: #F2C6B4;
+  --color-card-bg: #FFFFFF;
+  --card-media-bg: var(--color-tint-1);
+  --color-doc-soft: #F9D2D7;
+  --color-doc-line: #EBD9D2;
+  --color-photo-bg: #E9A08F;
+  --color-photo-text: #3A1712;
+  --color-promo-bg: #F9D2D7;
+  --color-promo-text: #2A1714;
+  --color-promo-heading: #C8201A;
+  --color-newsletter-bg: #FFFFFF;
+  --color-input-border: #D9B5AE;
+  --color-page-hero-bg: #F9D2D7;
+  --color-callout-bg: #FFFFFF;
+  --color-error: #9E1914;
+  --color-success: #1E6B3A;
+
+  /* Formen */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 22px;
+  --btn-radius: 999px;
+  --logo-radius: 50%;
+  --card-border: 0;
+  --card-media-h: 210px;
+  --card-arrow: grid;
+  --doc-shadow: 0 18px 32px rgba(120, 40, 30, 0.2);
+
+  /* Abstände */
+  --container: 1240px;
+  --gutter: clamp(20px, 4vw, 32px);
+  --section-space: clamp(56px, 8vw, 96px);
+  --hero-gap: 20px;
+  --hero-star: block;
+
+  /* Schriftgrössen */
+  --h1-max: 4rem;
+  --h1-hero-max: 4.75rem;
+  --h2-max: 3rem;
+}
